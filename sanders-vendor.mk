@@ -53,6 +53,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sanders/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-fpcservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-fpcservice \
     vendor/motorola/sanders/proprietary/vendor/bin/mm-qcamera-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/mm-qcamera-daemon \
     vendor/motorola/sanders/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc \
+    vendor/motorola/sanders/proprietary/vendor/etc/permissions/com.motorola.hardware.dtv.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.hardware.dtv.xml \
+    vendor/motorola/sanders/proprietary/vendor/etc/permissions/mot_dtv_permissions.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/mot_dtv_permissions.xml \
     vendor/motorola/sanders/proprietary/vendor/etc/qdcm_calib_data_mipi_mot_vid_djn_1080p_550.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_mipi_mot_vid_djn_1080p_550.xml \
     vendor/motorola/sanders/proprietary/vendor/etc/qdcm_calib_data_mipi_mot_vid_tianma_1080p_550.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_mipi_mot_vid_tianma_1080p_550.xml \
     vendor/motorola/sanders/proprietary/vendor/firmware/FT8006U_Pramboot.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/FT8006U_Pramboot.bin \
@@ -434,6 +436,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sanders/proprietary/vendor/lib/libchromatix_s5k4h8_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h8_video_full.so \
     vendor/motorola/sanders/proprietary/vendor/lib/libchromatix_s5k4h8_zsl_preview_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h8_zsl_preview_3a.so \
     vendor/motorola/sanders/proprietary/vendor/lib/libchromatix_s5k4h8_zsl_video_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4h8_zsl_video_3a.so \
+    vendor/motorola/sanders/proprietary/vendor/lib/libdtvhal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdtvhal.so \
+    vendor/motorola/sanders/proprietary/vendor/lib/libdtvtuner.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdtvtuner.so \
     vendor/motorola/sanders/proprietary/vendor/lib/libflash_aw3641.so:$(TARGET_COPY_OUT_VENDOR)/lib/libflash_aw3641.so \
     vendor/motorola/sanders/proprietary/vendor/lib/libflash_pmic.so:$(TARGET_COPY_OUT_VENDOR)/lib/libflash_pmic.so \
     vendor/motorola/sanders/proprietary/vendor/lib/libflash_sky81298.so:$(TARGET_COPY_OUT_VENDOR)/lib/libflash_sky81298.so \
@@ -581,4 +585,10 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sanders/proprietary/vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libscveBlobDescriptor_skel.so \
     vendor/motorola/sanders/proprietary/vendor/lib/rfsa/adsp/libscveT2T_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libscveT2T_skel.so \
     vendor/motorola/sanders/proprietary/vendor/lib64/hw/gatekeeper.msm8953.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gatekeeper.msm8953.so \
-    vendor/motorola/sanders/proprietary/vendor/lib64/hw/keystore.msm8953.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/keystore.msm8953.so
+    vendor/motorola/sanders/proprietary/vendor/lib64/hw/keystore.msm8953.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/keystore.msm8953.so \
+    vendor/motorola/sanders/proprietary/vendor/lib64/libdtvhal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdtvhal.so \
+    vendor/motorola/sanders/proprietary/vendor/lib64/libdtvtuner.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdtvtuner.so
+
+PRODUCT_PACKAGES += \
+    DTVPlayer \
+    DTVService
